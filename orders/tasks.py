@@ -69,7 +69,7 @@ def send_admin_notification_email(order_id):
             subject,
             message,
             settings.DEFAULT_FROM_EMAIL,
-            [settings.DEFAULT_FROM_EMAIL],  # Отправляем себе же
+            [settings.ADMIN_EMAIL],
             fail_silently=False,
         )
         
